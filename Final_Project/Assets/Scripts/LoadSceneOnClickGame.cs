@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneOnClickGame : MonoBehaviour
 {
+    //Test
+
     public void LoadByIndex(int buildIndex)
     {
 
