@@ -20,4 +20,6 @@ public class LoadSceneOnClickGame : MonoBehaviour
     {
         Application.Quit();
     }
+
+
 }
