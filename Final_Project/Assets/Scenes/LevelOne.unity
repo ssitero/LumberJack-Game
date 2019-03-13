@@ -627,8 +627,9 @@ GameObject:
   - component: {fileID: 1168953573}
   - component: {fileID: 1168953572}
   - component: {fileID: 1168953571}
+  - component: {fileID: 1168953574}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: Map1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -659,7 +660,7 @@ Terrain:
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
+  m_DetailObjectDistance: 250
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
@@ -695,6 +696,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1168953574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168953570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4bf9cf2cbc64006b4db4c20202e316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_terrain: {fileID: 1168953572}
+  DrawDistanceNum: 1000
 --- !u!1 &1717167060
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,7 +884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 469886, guid: ee2d107a34692a64e95ce85aed5e41f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.74
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 469886, guid: ee2d107a34692a64e95ce85aed5e41f0, type: 3}
       propertyPath: m_LocalPosition.z
