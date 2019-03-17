@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PickUp : MonoBehaviour
 {
+    public GameStatus gameStatus;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,7 @@ public class PickUp : MonoBehaviour
             //SetCountText();
             Debug.Log("Collided with player!");
             //GameObject.GetComponent<GameStatus>().AddScore(1);
+            gameStatus.AddScore(1);
         }
     }
 

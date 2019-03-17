@@ -88,12 +88,10 @@ public class GameStatus : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }*/
 
-    void OnTriggerEnter(Collider other) {
-
+    /*void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Pick Up")){
             other.gameObject.SetActive (false);
-			score = score + 1;
-			        
-    }
-}
+			score = score + 1;        
+        }
+    }*/
 }
