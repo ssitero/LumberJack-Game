@@ -61,10 +61,6 @@ public class GameStatus : MonoBehaviour
     public void AddScore(int s)
     {
         score += s;
-        // We could take this opportunity to save the score in a file/PlayerPrefs
-        // But depending on implementation, this could be slow/inneficient.
-        // On the other hand, if we are constantly saving the data on the fly,
-        // it means that we pretty much never lose anything to a crash
     }
 
     // Resets PlayerPrefs to default when game is quit
