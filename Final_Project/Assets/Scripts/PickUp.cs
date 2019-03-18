@@ -34,8 +34,9 @@ public class PickUp : MonoBehaviour
             //score = score + 1;
             //SetCountText();
             Debug.Log("Collided with player!");
-            //GameObject.GetComponent<GameStatus>().AddScore(1);
-            gameStatus.AddScore(1);
+            //gameStatus.GetComponent<GameStatus>().AddScore(1);
+            //gameStatus.AddScore(1);
+            FindObjectOfType<GameStatus>().AddScore(1);
         }
     }
 
