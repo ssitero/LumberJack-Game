@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameStatus : MonoBehaviour
 {
 
-    Scene m_Scene;
+    //Scene m_Scene;
 
     [HideInInspector]
     private int finishCurrentSceneCount;
@@ -20,14 +20,14 @@ public class GameStatus : MonoBehaviour
     [Header ("Total collectable wood:")]
     public int woodCount;
  
-
     // Start is called before the first frame update
     void Start()
     {
         score = PlayerPrefs.GetInt("score", 0);
         wood = PlayerPrefs.GetInt("wood", 0);
         highScore = PlayerPrefs.GetInt("highScore", 0);
-        GetCurrentScene();
+        Time.timeScale = 1f;
+        //GetCurrentScene();
     }
 
     // Update is called once per frame
@@ -36,6 +36,7 @@ public class GameStatus : MonoBehaviour
 
     }
 
+    // 
     private void OnDestroy()
     {
         Debug.Log("GameStatus was destroyed.");
@@ -44,11 +45,13 @@ public class GameStatus : MonoBehaviour
         PlayerPrefs.SetInt("highScore", highScore);
     }
 
+    // Add to the score
     public void AddScore(int s)
     {
         score += s;
     }
 
+    // Add to the wood count
     public void AddWood(int w)
     {
         wood += w;
@@ -56,45 +59,50 @@ public class GameStatus : MonoBehaviour
         SetCountText();
     }
 
+    // When all the wood is collected reset the wood count to 0 and show/hide panels
     void SetCountText()
     {
-        //countText.text = "Count: " + finishCurrentSceneCount.ToString();
         if (finishCurrentSceneCount >= woodCount)
         {
-            //winText.text = "You Win!";
-            ResetWood();
             Debug.Log("All wood has been picked up.");
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            //SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+            FindObjectOfType<CanvasControl>().ShowLevelScreen();
+            FindObjectOfType<CanvasControl>().HideScorePanel();    
+            ResetWood();
         }
     }
 
-    // Resets PlayerPrefs to default when game is quit
+    // Resets PlayerPrefs to 0 when game is quit
     public void ResetScore()
     {
         score = 0;
+        PlayerPrefs.SetInt("score", 0);
     }
 
-    // Resets PlayerPrefs to default when game is quit
+    // Resets PlayerPrefs to 0 when game is quit
     public void ResetWood()
     {
         wood = 0;
+        PlayerPrefs.SetInt("wood", 0);
     }
 
-    // Resets PlayerPrefs to default when game is quit
+    // Resets PlayerPrefs to 0 when game is quit
     public void ResetAll()
     {
         wood = 0;
         score = 0;
+        PlayerPrefs.SetInt("score", 0);
+        PlayerPrefs.SetInt("wood", 0);
     }
 
-    // Resets PlayerPrefs to default when game is quit
+    // Resets PlayerPrefs to 0 when game is quit
     public void ResetHighScore()
     {
         highScore = 0;
+        PlayerPrefs.SetInt("highScore", 0);
     }
 
-    public void GetCurrentScene()
+    //
+    /*public void GetCurrentScene()
     {
         //Return the current Active Scene in order to get the current Scene's name
         m_Scene = SceneManager.GetActiveScene();
@@ -103,7 +111,7 @@ public class GameStatus : MonoBehaviour
         {
             Debug.Log("Current Scene: " + m_Scene.name);
         }
-    }
+    }*/
 
     /*public void LoadScene(string sceneName)
     {

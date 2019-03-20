@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScorePanelUpdater : MonoBehaviour
 {
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         // This is a (relatively slow/bad) way to grab the GameStatus
         GameObject go = GameObject.Find("GameStatus");
