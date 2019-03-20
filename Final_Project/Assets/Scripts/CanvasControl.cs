@@ -9,6 +9,8 @@ public class CanvasControl : MonoBehaviour
     public GameObject levelScreen;
     public GameObject mainMenu;
     public GameObject scorePanel;
+    public GameObject pauseMenu;
+    public static bool GameIsPaused = false;
 
     void Start()
     {
@@ -17,10 +19,17 @@ public class CanvasControl : MonoBehaviour
 
     void Update()
     {
-        /*if (Input.GetKeyUp(KeyCode.Tab))
+        if (Input.GetKeyUp(KeyCode.Pause))
         {
-
-        }*/
+            if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
     }
 
     // Load Scenes
@@ -36,7 +45,7 @@ public class CanvasControl : MonoBehaviour
 
     }
 
-    // Level Screen
+    // Level Screen Panel
     public void ShowLevelScreen()
     {
         levelScreen.SetActive(true);
@@ -52,7 +61,7 @@ public class CanvasControl : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    // Main Menu
+    // Main Menu Panel
     public void ShowMainMenu()
     {
         mainMenu.SetActive(true);
@@ -70,6 +79,24 @@ public class CanvasControl : MonoBehaviour
     public void HideScorePanel()
     {
         scorePanel.SetActive(false);
+    }
+
+    // Pause Menu Panel
+    public void Pause()
+    {
+        pauseMenu.SetActive(true);
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+        Time.timeScale = 0f;
+        GameIsPaused = true;
+    }
+    public void Resume()
+    {
+        pauseMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Time.timeScale = 1f;
+        GameIsPaused = false;
     }
 
     // Exit Game

@@ -242,6 +242,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 95369326}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &95369328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5128089746867399046, guid: d698b073080179a4aa314a5c5aa5db0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 95369326}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &145111948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1127,6 +1133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelScreen: {fileID: 3252439854892239673}
   mainMenu: {fileID: 1403063275}
+  scorePanel: {fileID: 95369328}
+  pauseMenu: {fileID: 0}
 --- !u!224 &1546989369430935216 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1546989369430935216, guid: 4f5626f7d13bac64c8b87d87c7396f08,
