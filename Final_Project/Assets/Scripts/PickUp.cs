@@ -7,45 +7,30 @@ public class PickUp : MonoBehaviour
 {
     public GameStatus gameStatus;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-	/*void OnTriggerEnter(Collider other) {
-
-		if (other.gameObject.CompareTag("Pick Up")){
-			other.gameObject.SetActive (false);
-		}
-	}*/
-
     void OnTriggerEnter(Collider other)
     {
+        
         if (other.gameObject.CompareTag("Player"))
         {
-            this.gameObject.SetActive(false);
-            //score = score + 1;
-            //SetCountText();
-            Debug.Log("Collided with player!");
+
+            Debug.Log("Collided with pickup!");
             //gameStatus.GetComponent<GameStatus>().AddScore(1);
             //gameStatus.AddScore(1);
-            FindObjectOfType<GameStatus>().AddScore(1);
+          
+            if (this.gameObject.tag == "Coin")
+            {
+                Debug.Log("Coin");
+                FindObjectOfType<GameStatus>().AddScore(1);
+            }
+
+            if (this.gameObject.tag == "Wood")
+            {
+                Debug.Log("Wood");
+                FindObjectOfType<GameStatus>().AddWood(1);
+            }
+            this.gameObject.SetActive(false);
         }
     }
 
-    /*void SetCountText()
-    {
-        countText.text = "Count: " + count.ToString();
-        if (count >= 11)
-        {
-            //winText.text = "You Win!";
-        }
-    }*/
+
 }
