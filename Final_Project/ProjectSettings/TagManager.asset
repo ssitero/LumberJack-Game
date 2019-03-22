@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - Wood
   - LevelScreen
+  - Tree
   layers:
   - Default
   - TransparentFX
