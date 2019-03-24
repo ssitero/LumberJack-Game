@@ -74,31 +74,36 @@ public class GameStatus : MonoBehaviour
     // Resets PlayerPrefs to 0 when game is quit
     public void ResetScore()
     {
-        score = 0;
         PlayerPrefs.SetInt("score", 0);
+        score = 0;
     }
 
     // Resets PlayerPrefs to 0 when game is quit
     public void ResetWood()
     {
-        wood = 0;
         PlayerPrefs.SetInt("wood", 0);
+        wood = 0;
     }
 
     // Resets PlayerPrefs to 0 when game is quit
     public void ResetAll()
     {
-        wood = 0;
-        score = 0;
         PlayerPrefs.SetInt("score", 0);
         PlayerPrefs.SetInt("wood", 0);
+        wood = 0;
+        score = 0;
     }
 
     // Resets PlayerPrefs to 0 when game is quit
     public void ResetHighScore()
     {
-        highScore = 0;
         PlayerPrefs.SetInt("highScore", 0);
+        highScore = 0;
+    }
+
+    private void OnApplicationQuit()
+    {
+        ResetAll();
     }
 
     //

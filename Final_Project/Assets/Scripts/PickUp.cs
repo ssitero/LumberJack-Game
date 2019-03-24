@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class PickUp : MonoBehaviour
 {
-    public GameStatus gameStatus;
-
     void OnTriggerEnter(Collider other)
     {
         
@@ -31,6 +29,4 @@ public class PickUp : MonoBehaviour
             this.gameObject.SetActive(false);
         }
     }
-
-
 }

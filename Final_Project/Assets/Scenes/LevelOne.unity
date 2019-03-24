@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.571188, g: 0.6251643, b: 0.6747918, a: 1}
+  m_IndirectSpecularColor: {r: 0.5711985, g: 0.6251908, b: 0.6747246, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 719022650}
   - component: {fileID: 719022654}
   m_Layer: 5
-  m_Name: Menus
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
