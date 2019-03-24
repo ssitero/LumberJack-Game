@@ -8,7 +8,7 @@ public class ScorePanelUpdater : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        // This is a (relatively slow/bad) way to grab the GameStatus
+        //
         GameObject go = GameObject.Find("GameStatus");
         if(go == null)
         {
@@ -17,7 +17,7 @@ public class ScorePanelUpdater : MonoBehaviour
             return;
         }
 
-        //It's the GameStatus script that we actually care about.
+        //
         GameStatus gs = go.GetComponent<GameStatus>();
         GetComponent<Text>().text = "Score: " + gs.score + " Wood: " + gs.wood;
     }
