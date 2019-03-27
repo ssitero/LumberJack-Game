@@ -19,7 +19,7 @@ public class CanvasControl : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Pause))
+        if (Input.GetKeyUp(KeyCode.P))
         {
             if (GameIsPaused)
             {
