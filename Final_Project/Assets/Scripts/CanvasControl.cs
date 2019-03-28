@@ -101,6 +101,7 @@ public class CanvasControl : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        FindObjectOfType<GameStatus>().ResetWood();
     }
     public void Quit()
     {
