@@ -98,6 +98,14 @@ public class CanvasControl : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void Quit()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     // Exit Game
     public void ExitGame()
