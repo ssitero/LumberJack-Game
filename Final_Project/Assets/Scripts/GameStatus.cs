@@ -65,7 +65,7 @@ public class GameStatus : MonoBehaviour
         if (finishCurrentSceneCount >= woodCount)
         {
             Debug.Log("All wood has been picked up.");
-            FindObjectOfType<CanvasControl>().ShowLevelScreen();
+            FindObjectOfType<CanvasControl>().ShowWinMenu();
             FindObjectOfType<CanvasControl>().HideScorePanel();    
             ResetWood();
         }
