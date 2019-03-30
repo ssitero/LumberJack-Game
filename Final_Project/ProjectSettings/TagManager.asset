@@ -9,6 +9,7 @@ TagManager:
   - Wood
   - LevelScreen
   - Tree
+  - Enemy
   layers:
   - Default
   - TransparentFX
