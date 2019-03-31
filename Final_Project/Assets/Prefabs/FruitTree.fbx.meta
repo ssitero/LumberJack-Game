@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 944c8ef4ea01a4131b9455189ed102e7
+guid: 545a666c97ce34d6f9f5cc397fffd6ac
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -17,7 +17,17 @@ ModelImporter:
     3300002: TreeTrunk
     4300000: TreeTrunk
     4300002: Leaf
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaf
+    second: {fileID: 2100000, guid: 4b63397721dd9464ab8cab7273e44295, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TreeTrunk
+    second: {fileID: 2100000, guid: 62246eb8e41104f17a2611b3615e02d6, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
