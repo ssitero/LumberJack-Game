@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.48466885, g: 0.48480666, b: 0.41650137, a: 1}
+  m_IndirectSpecularColor: {r: 0.48467547, g: 0.48476827, b: 0.41650206, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -402,7 +402,7 @@ Terrain:
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 100
+  m_DetailObjectDistance: 45
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
@@ -484,6 +484,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameStatus
       objectReference: {fileID: 0}
+    - target: {fileID: 1560861038726892310, guid: 9df8f2787d903d14bb80ddb345557c00,
+        type: 3}
+      propertyPath: woodCount
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1560861038726892309, guid: 9df8f2787d903d14bb80ddb345557c00,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -538,11 +543,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1560861038726892310, guid: 9df8f2787d903d14bb80ddb345557c00,
-        type: 3}
-      propertyPath: woodCount
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df8f2787d903d14bb80ddb345557c00, type: 3}

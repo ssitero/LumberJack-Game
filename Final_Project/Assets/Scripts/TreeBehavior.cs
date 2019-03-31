@@ -16,6 +16,7 @@ public class TreeBehavior : MonoBehaviour
     public float explosionUpward = 0.4f;
     public float lifetime = 3.0f;
     public Material wood;
+    public int counter;
 
 
 
@@ -23,7 +24,7 @@ public class TreeBehavior : MonoBehaviour
     {
 
 
-
+        counter = 0;
         cubesPivotDistance = cubeSize * cubesInRow / 2;
 
         cubesPivot = new Vector3(cubesPivotDistance, cubesPivotDistance, cubesPivotDistance);
@@ -36,11 +37,15 @@ public class TreeBehavior : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision col)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Player"))
         {
-            explode();
+            counter++;
+            if (counter == 3)
+            {
+                explode();
+            }
         }
 
     }
