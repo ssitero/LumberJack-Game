@@ -127,7 +127,7 @@ PrefabInstance:
     - target: {fileID: 5128089746867399046, guid: d698b073080179a4aa314a5c5aa5db0c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5128089746867399041, guid: d698b073080179a4aa314a5c5aa5db0c,
         type: 3}
@@ -1028,6 +1028,7 @@ GameObject:
   - component: {fileID: 1768498056}
   - component: {fileID: 1768498055}
   - component: {fileID: 1768498059}
+  - component: {fileID: 1768498060}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1135,6 +1136,28 @@ MonoBehaviour:
   mainMenu: {fileID: 1403063275}
   scorePanel: {fileID: 95369328}
   pauseMenu: {fileID: 0}
+--- !u!114 &1768498060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768498054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 2
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
 --- !u!224 &1546989369430935216 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1546989369430935216, guid: 4f5626f7d13bac64c8b87d87c7396f08,
@@ -1532,6 +1555,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542744612483265893, guid: 4f5626f7d13bac64c8b87d87c7396f08,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1768498059}
+    - target: {fileID: 4542744612483265893, guid: 4f5626f7d13bac64c8b87d87c7396f08,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadSceneByIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542744612483265893, guid: 4f5626f7d13bac64c8b87d87c7396f08,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542744612483265893, guid: 4f5626f7d13bac64c8b87d87c7396f08,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5626f7d13bac64c8b87d87c7396f08, type: 3}

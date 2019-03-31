@@ -10,6 +10,8 @@ public class CanvasControl : MonoBehaviour
     public GameObject mainMenu;
     public GameObject scorePanel;
     public GameObject pauseMenu;
+    public GameObject overMenu;
+    public GameObject winMenu;
     public static bool GameIsPaused = false;
 
     void Start()
@@ -19,7 +21,7 @@ public class CanvasControl : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Pause))
+        if (Input.GetKeyUp(KeyCode.P))
         {
             if (GameIsPaused)
             {
@@ -45,20 +47,60 @@ public class CanvasControl : MonoBehaviour
 
     }
 
-    // Level Screen Panel
-    public void ShowLevelScreen()
+    // Locks the game and shows the mouse
+    private void LockScreen()
     {
-        levelScreen.SetActive(true);
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
         Time.timeScale = 0f;
     }
-    public void HideLevelScreen()
+
+    // Unlocks the game and shows the mouse
+    private void UnlockScreen()
     {
-        levelScreen.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Time.timeScale = 1f;
+    }
+
+    // Level Screen Panel
+    public void ShowLevelScreen()
+    {
+        levelScreen.SetActive(true);
+        if (winMenu.activeInHierarchy == true)
+        {
+            winMenu.SetActive(false);
+        }
+        LockScreen();
+    }
+    public void HideLevelScreen()
+    {
+        levelScreen.SetActive(false);
+        UnlockScreen();
+    }
+
+    // Over Menu Panel
+    public void ShowOverMenu()
+    {
+        overMenu.SetActive(true);
+        LockScreen();
+    }
+    public void HideOverMenu()
+    {
+        overMenu.SetActive(false);
+        UnlockScreen();
+    }
+
+    // Win Menu Panel
+    public void ShowWinMenu()
+    {
+        winMenu.SetActive(true);
+        LockScreen();
+    }
+    public void HideWinMenu()
+    {
+        winMenu.SetActive(false);
+        UnlockScreen();
     }
 
     // Main Menu Panel
@@ -70,7 +112,19 @@ public class CanvasControl : MonoBehaviour
     {
         mainMenu.SetActive(false);
     }
-   
+
+    // Pause Menu Panel
+    public void Pause()
+    {
+        pauseMenu.SetActive(true);
+        LockScreen();
+    }
+    public void Resume()
+    {
+        pauseMenu.SetActive(false);
+        UnlockScreen();
+    }
+
     // Score Panel
     public void ShowScorePanel()
     {
@@ -81,22 +135,16 @@ public class CanvasControl : MonoBehaviour
         scorePanel.SetActive(false);
     }
 
-    // Pause Menu Panel
-    public void Pause()
+    // Restart
+    public void Restart()
     {
-        pauseMenu.SetActive(true);
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = true;
-        Time.timeScale = 0f;
-        GameIsPaused = true;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    public void Resume()
+
+    // Quit
+    public void Quit()
     {
-        pauseMenu.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        Time.timeScale = 1f;
-        GameIsPaused = false;
+        SceneManager.LoadScene(0);
     }
 
     // Exit Game
