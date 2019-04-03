@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PickUp : MonoBehaviour
 {
+
     void OnTriggerEnter(Collider other)
     {
         
