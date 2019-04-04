@@ -10,7 +10,7 @@ TagManager:
   - LevelScreen
   - Tree
   - Enemy
-  - Bear
+  - Rock
   layers:
   - Default
   - TransparentFX
@@ -21,13 +21,13 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Tree
+  - Rock
+  - Log
+  - Stump
+  - Shirt
+  - Enemy
+  - Player
   - 
   - 
   - 

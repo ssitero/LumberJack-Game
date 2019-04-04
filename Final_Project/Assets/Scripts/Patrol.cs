@@ -14,9 +14,6 @@ public class Patrol : MonoBehaviour
     public GameObject target;
     // public GameObject bullet;
 
-
-
-
     void Awake()
     {
         navAgent = GetComponent<NavMeshAgent>();
