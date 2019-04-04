@@ -18,11 +18,8 @@ public class TreeBehavior : MonoBehaviour
     public Material wood;
     public int counter;
 
-
-
     void Start()
     {
-
 
         counter = 0;
         cubesPivotDistance = cubeSize * cubesInRow / 2;
