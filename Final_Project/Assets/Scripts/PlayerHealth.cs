@@ -43,8 +43,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Bear"))
+        if (col.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("Hit");
             hitPoints--;
             if (hitPoints == 2)
             {

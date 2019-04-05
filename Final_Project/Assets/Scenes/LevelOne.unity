@@ -3379,7 +3379,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
       propertyPath: m_Name
-      value: Guard
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
       propertyPath: m_TagString

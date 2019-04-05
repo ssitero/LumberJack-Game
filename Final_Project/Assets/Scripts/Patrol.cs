@@ -50,14 +50,14 @@ public class Patrol : MonoBehaviour
             SetNewRandomDestination();
             timer_Count = 0f;
         }
-
     }
+
     void SetNewRandomDestination()
     {
-
         Vector3 newDestination = RandomNavSphere(transform.position, patrol_Radius, -1);
         navAgent.SetDestination(newDestination);
     }
+
     Vector3 RandomNavSphere(Vector3 originPos, float radius, int layerMask)
     {
         Vector3 randDir = Random.insideUnitSphere * radius;
@@ -67,15 +67,12 @@ public class Patrol : MonoBehaviour
         NavMesh.SamplePosition(randDir, out navHit, radius, layerMask);
 
         return navHit.position;
-
-
     }
+
     void OnTriggerEnter(Collider other)
     {
-
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("TemporaryCharacter"))
         {
-
             other.gameObject.SetActive(false);
             //LoseMenu.GameIsLost = true;
         }
