@@ -105,21 +105,4 @@ public class GameStatus : MonoBehaviour
     {
         ResetAll();
     }
-
-    //
-    /*public void GetCurrentScene()
-    {
-        //Return the current Active Scene in order to get the current Scene's name
-        m_Scene = SceneManager.GetActiveScene();
-        //
-        if (m_Scene.name == MainMenu)
-        {
-            Debug.Log("Current Scene: " + m_Scene.name);
-        }
-    }*/
-
-    /*public void LoadScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }*/
 }

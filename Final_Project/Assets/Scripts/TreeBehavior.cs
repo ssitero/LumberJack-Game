@@ -18,11 +18,8 @@ public class TreeBehavior : MonoBehaviour
     public Material wood;
     public int counter;
 
-
-
     void Start()
     {
-
 
         counter = 0;
         cubesPivotDistance = cubeSize * cubesInRow / 2;
@@ -46,8 +43,8 @@ public class TreeBehavior : MonoBehaviour
             {
                 explode();
             }
+            FindObjectOfType<AudioManager>().Play("WoodChop");
         }
-
     }
 
     public void explode()
@@ -82,7 +79,7 @@ public class TreeBehavior : MonoBehaviour
                 rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, explosionUpward);
             }
         }
-
+        FindObjectOfType<AudioManager>().Play("WoodDestruction");
     }
 
     void createPiece(int x, int y, int z)

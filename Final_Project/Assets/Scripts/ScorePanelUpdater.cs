@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class ScorePanelUpdater : MonoBehaviour
 {
+    private Text woodText;
+    private Text scoreText;
+
     // Update is called once per frame
     private void Update()
     {
@@ -19,6 +22,12 @@ public class ScorePanelUpdater : MonoBehaviour
 
         //
         GameStatus gs = go.GetComponent<GameStatus>();
-        GetComponent<Text>().text = "Score: " + gs.score + " Wood: " + gs.wood;
+        //GetComponent<Text>().text = "Score: " + gs.score + " Wood: " + gs.wood;
+
+        woodText = GameObject.Find("WoodText").GetComponent<Text>();
+        woodText.text = "" + gs.wood;
+
+        scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
+        scoreText.text = "" + gs.score;
     }
 }
