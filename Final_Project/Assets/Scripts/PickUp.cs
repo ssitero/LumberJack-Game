@@ -16,11 +16,11 @@ public class PickUp : MonoBehaviour
             //gameStatus.GetComponent<GameStatus>().AddScore(1);
             //gameStatus.AddScore(1);
           
-            if (this.gameObject.tag == "Coin")
+            if (this.gameObject.tag == "Shirt")
             {
-                Debug.Log("Coin");
+                Debug.Log("Shirt");
                 FindObjectOfType<GameStatus>().AddScore(1);
-                FindObjectOfType<AudioManager>().Play("WoodPickup");
+                FindObjectOfType<AudioManager>().Play("Pickup");
             }
 
             if (this.gameObject.tag == "Wood")

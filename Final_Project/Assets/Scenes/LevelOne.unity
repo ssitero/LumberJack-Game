@@ -1187,6 +1187,22 @@ PrefabInstance:
       propertyPath: m_Text
       value: Level 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5275178923691619800, guid: 4f5626f7d13bac64c8b87d87c7396f08,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5275178923691619800, guid: 4f5626f7d13bac64c8b87d87c7396f08,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727452031855514731, guid: 4f5626f7d13bac64c8b87d87c7396f08,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 51218ab4fae145347828ea48f87a029a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5626f7d13bac64c8b87d87c7396f08, type: 3}
 --- !u!224 &474483761 stripped
@@ -1522,6 +1538,10 @@ PrefabInstance:
     - target: {fileID: 412908181, guid: 6c7a673b5163b4e6690034fac4ffc682, type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 412908181, guid: 6c7a673b5163b4e6690034fac4ffc682, type: 3}
+      propertyPath: m_TagString
+      value: Shirt
       objectReference: {fileID: 0}
     - target: {fileID: 412908182, guid: 6c7a673b5163b4e6690034fac4ffc682, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2181,6 +2201,10 @@ PrefabInstance:
     - target: {fileID: 412908181, guid: 6c7a673b5163b4e6690034fac4ffc682, type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 412908181, guid: 6c7a673b5163b4e6690034fac4ffc682, type: 3}
+      propertyPath: m_TagString
+      value: Shirt
       objectReference: {fileID: 0}
     - target: {fileID: 412908182, guid: 6c7a673b5163b4e6690034fac4ffc682, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8479,6 +8503,10 @@ PrefabInstance:
     - target: {fileID: 412908181, guid: 6c7a673b5163b4e6690034fac4ffc682, type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 412908181, guid: 6c7a673b5163b4e6690034fac4ffc682, type: 3}
+      propertyPath: m_TagString
+      value: Shirt
       objectReference: {fileID: 0}
     - target: {fileID: 412908182, guid: 6c7a673b5163b4e6690034fac4ffc682, type: 3}
       propertyPath: m_LocalPosition.x

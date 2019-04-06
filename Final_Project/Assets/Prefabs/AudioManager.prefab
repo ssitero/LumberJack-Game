@@ -84,3 +84,8 @@ MonoBehaviour:
     volume: 1
     loop: 0
     source: {fileID: 0}
+  - name: Pickup
+    clip: {fileID: 8300000, guid: 72166633b9a33df49b1c7dd46a212eb4, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
