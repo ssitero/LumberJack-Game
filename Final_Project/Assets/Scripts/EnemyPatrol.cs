@@ -10,12 +10,10 @@ public class EnemyPatrol : MonoBehaviour
     Rigidbody m_Rigidbody;  
 
     [HideInInspector]
-    public GameOverMenu gameOverMenu;
     public GameObject target;
     public bool showDebug;
     public static bool isStunnedToggle = false;
     private float stunTime = 4f;
-    public Text winText;
 
     [Header ("Nav Mesh Stuff")]
     NavMeshAgent myAgent;
@@ -158,8 +156,7 @@ public class EnemyPatrol : MonoBehaviour
     private void Attack()
     {
         print("attacking the player");
-        winText.text = "You Died!";
-        gameOverMenu.GetComponent<GameOverMenu>().GameOver();
+
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
