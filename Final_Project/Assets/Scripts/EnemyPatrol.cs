@@ -67,8 +67,6 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        
-
         if (attacking == true)
         {
             startTimer += Time.deltaTime;
@@ -156,7 +154,6 @@ public class EnemyPatrol : MonoBehaviour
     private void Attack()
     {
         print("attacking the player");
-
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }

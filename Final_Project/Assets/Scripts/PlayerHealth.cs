@@ -46,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
         if (col.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Hit");
+            FindObjectOfType<AudioManager>().Play("BearAttack");
             hitPoints--;
             if (hitPoints == 2)
             {

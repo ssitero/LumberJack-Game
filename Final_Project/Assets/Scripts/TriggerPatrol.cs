@@ -29,6 +29,7 @@ public class TriggerPatrol : MonoBehaviour
         if (coll.gameObject.tag == "Player" && isStunned != true)
         {
             print("player has entered the danger zone");
+            FindObjectOfType<AudioManager>().Play("BearWarning");
             enemyPatrol.target = coll.gameObject;
         }
     }
