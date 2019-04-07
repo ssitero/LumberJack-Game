@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         // For TESTING /////////
-        if (Input.GetKeyUp(KeyCode.H))
+        /*if (Input.GetKeyUp(KeyCode.H))
         {
             hitPoints--;
             if (hitPoints == 2)
@@ -37,7 +37,7 @@ public class PlayerHealth : MonoBehaviour
                 heart1.SetActive(false);
                 FindObjectOfType<CanvasControl>().ShowOverMenu();
             }
-        }
+        }*/
         ////////////////////////
     }
 
