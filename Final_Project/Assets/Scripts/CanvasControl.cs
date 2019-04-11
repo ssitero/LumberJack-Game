@@ -44,7 +44,7 @@ public class CanvasControl : MonoBehaviour
     // Tutorial
     public void LoadTutorial()
     {
-
+        SceneManager.LoadScene("Tutorial");
     }
 
     // Locks the game and shows the mouse

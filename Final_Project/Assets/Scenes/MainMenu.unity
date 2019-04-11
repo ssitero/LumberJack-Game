@@ -601,10 +601,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1020,7 +1020,7 @@ PrefabInstance:
     - target: {fileID: 5026052375711449833, guid: 7cabc77f872e4c443b89e7dd6a2cefc8,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5026052375711449833, guid: 7cabc77f872e4c443b89e7dd6a2cefc8,
         type: 3}
@@ -1077,6 +1077,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5026052375711449833, guid: 7cabc77f872e4c443b89e7dd6a2cefc8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadSceneByIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026052375711449833, guid: 7cabc77f872e4c443b89e7dd6a2cefc8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026052375711449833, guid: 7cabc77f872e4c443b89e7dd6a2cefc8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5026052376919536690, guid: 7cabc77f872e4c443b89e7dd6a2cefc8,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1087,6 +1102,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1768498059}
+    - target: {fileID: 5390198020509989098, guid: 7cabc77f872e4c443b89e7dd6a2cefc8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -149
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390198020509989098, guid: 7cabc77f872e4c443b89e7dd6a2cefc8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5332822
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390198020509989098, guid: 7cabc77f872e4c443b89e7dd6a2cefc8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5332822
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390198020509989098, guid: 7cabc77f872e4c443b89e7dd6a2cefc8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5332822
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cabc77f872e4c443b89e7dd6a2cefc8, type: 3}
 --- !u!1001 &6037782031804049808
