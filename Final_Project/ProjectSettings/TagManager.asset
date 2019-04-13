@@ -5,13 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pick Up
-  - Coin
   - Wood
   - LevelScreen
   - Tree
   - Enemy
   - Rock
   - Shirt
+  - Cabin
+  - Stump
+  - Log
   layers:
   - Default
   - TransparentFX
@@ -31,8 +33,8 @@ TagManager:
   - Player
   - Waypoint
   - Wood
-  - 
-  - 
+  - Cabin
+  - Stump
   - 
   - 
   - 

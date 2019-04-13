@@ -9,6 +9,12 @@ public class GameStatus : MonoBehaviour
 {
 
     //Scene m_Scene;
+    [HideInInspector]
+    public GameObject summerCabin;
+    [HideInInspector]
+    public GameObject autumnCabin;
+    [HideInInspector]
+    public GameObject completeCabin;
 
     [HideInInspector]
     private int finishCurrentSceneCount;
@@ -28,12 +34,32 @@ public class GameStatus : MonoBehaviour
         highScore = PlayerPrefs.GetInt("highScore", 0);
         Time.timeScale = 1f;
         //GetCurrentScene();
+
+        // Hide all cabins initially
+        summerCabin = GameObject.Find("SummerCabin");
+        autumnCabin = GameObject.Find("AutumnCabin");
+        completeCabin = GameObject.Find("CompleteCabin");
+        if (summerCabin != null)
+        {
+            summerCabin.SetActive(false);
+        }
+        if (autumnCabin != null)
+        {
+            autumnCabin.SetActive(false);
+        }
+        if (autumnCabin != null)
+        {
+            completeCabin.SetActive(false);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            ShowCabin("Autumn");
+        }
     }
 
     // 
@@ -65,9 +91,11 @@ public class GameStatus : MonoBehaviour
         if (finishCurrentSceneCount >= woodCount)
         {
             Debug.Log("All wood has been picked up.");
-            FindObjectOfType<CanvasControl>().ShowWinMenu();
+            //FindObjectOfType<CanvasControl>().ShowWinMenu();
+            FindObjectOfType<CanvasControl>().SetOverlayText("Enter the Cabin.", 3);
             FindObjectOfType<CanvasControl>().HideScorePanel();    
             ResetWood();
+            ShowCabin("Summer");
         }
     }
 
@@ -104,5 +132,25 @@ public class GameStatus : MonoBehaviour
     private void OnApplicationQuit()
     {
         ResetAll();
+    }
+
+    public void ShowCabin(string cabin)
+    {
+        print("Cabin name: " + cabin);
+        switch (cabin)
+        {
+            case "Summer":
+                summerCabin.SetActive(true);
+                break;
+            case "Autumn":
+                autumnCabin.SetActive(true);
+                break;
+            case "Complete":
+                completeCabin.SetActive(true);
+                break;
+            default:
+                print("No cabin");
+                break;
+        }
     }
 }
