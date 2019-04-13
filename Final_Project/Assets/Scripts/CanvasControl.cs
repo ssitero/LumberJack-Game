@@ -13,6 +13,9 @@ public class CanvasControl : MonoBehaviour
     public GameObject overMenu;
     public GameObject winMenu;
     public static bool GameIsPaused = false;
+    public GameObject overlay;
+    public Text overlayText;
+    float countDown = 3.0f;
 
     void Start()
     {
@@ -152,4 +155,37 @@ public class CanvasControl : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void SetOverlayText(string txt, int sec)
+    {
+        ShowOverlay();
+        StartCoroutine(Countdown(sec));
+        overlayText = GameObject.Find("OverlayText").GetComponent<Text>();
+        overlayText.text = txt;
+    }
+
+    private IEnumerator Countdown(int s)
+    {
+        float duration = s; 
+                             
+        float normalizedTime = 0;
+        while (normalizedTime <= 1f)
+        {
+            //countdownImage.fillAmount = normalizedTime;
+            normalizedTime += Time.deltaTime / duration;
+            yield return null;
+        }
+        HideOverlay();
+    }
+
+    public void ShowOverlay()
+    {
+        overlay.SetActive(true);
+    }
+
+    public void HideOverlay()
+    {
+        overlay.SetActive(false);
+    }
+
 }

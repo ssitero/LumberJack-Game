@@ -11572,6 +11572,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TutorialPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3440701546782822702, guid: 20dc16300ec654e4a879bc6c0619741e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3440701546782822703, guid: 20dc16300ec654e4a879bc6c0619741e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11687,5 +11692,16 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3440701546016739053, guid: 20dc16300ec654e4a879bc6c0619741e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5653254859454453982, guid: 20dc16300ec654e4a879bc6c0619741e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5653254859454453982, guid: 20dc16300ec654e4a879bc6c0619741e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 20dc16300ec654e4a879bc6c0619741e, type: 3}
