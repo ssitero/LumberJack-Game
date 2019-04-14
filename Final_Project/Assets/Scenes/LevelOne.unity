@@ -3512,7 +3512,6 @@ GameObject:
   - component: {fileID: 1168953573}
   - component: {fileID: 1168953572}
   - component: {fileID: 1168953571}
-  - component: {fileID: 1168953574}
   m_Layer: 0
   m_Name: Map1
   m_TagString: Untagged
@@ -3581,18 +3580,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1168953574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168953570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b4bf9cf2cbc64006b4db4c20202e316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1185508862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10067,6 +10054,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3778661691927541622, guid: d698b073080179a4aa314a5c5aa5db0c,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2056453599961910755, guid: d698b073080179a4aa314a5c5aa5db0c,
         type: 3}
       propertyPath: m_Name
@@ -10100,11 +10092,6 @@ PrefabInstance:
     - target: {fileID: 2758721990185866555, guid: d698b073080179a4aa314a5c5aa5db0c,
         type: 3}
       propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3778661691927541622, guid: d698b073080179a4aa314a5c5aa5db0c,
-        type: 3}
-      propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6132197038958035742, guid: d698b073080179a4aa314a5c5aa5db0c,
@@ -10387,6 +10374,11 @@ PrefabInstance:
       propertyPath: GrizzlyBearRoar
       value: 
       objectReference: {fileID: 8300000, guid: c6421133604c4b54abd629f8b3a1ce99, type: 3}
+    - target: {fileID: 6253406464783176380, guid: a09671dfff720ba43907ee31702370d7,
+        type: 3}
+      propertyPath: points.Array.data[6]
+      value: 
+      objectReference: {fileID: 948806827}
     - target: {fileID: 6253406464896116815, guid: a09671dfff720ba43907ee31702370d7,
         type: 3}
       propertyPath: agroRad

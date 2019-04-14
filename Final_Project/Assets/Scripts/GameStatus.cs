@@ -58,7 +58,7 @@ public class GameStatus : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            ShowCabin("Autumn");
+            ShowCabin("Summer");
         }
     }
 
