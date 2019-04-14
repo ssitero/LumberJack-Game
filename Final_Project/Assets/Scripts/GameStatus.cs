@@ -10,30 +10,29 @@ public class GameStatus : MonoBehaviour
 
     //Scene m_Scene;
     [HideInInspector]
-    public GameObject summerCabin;
-    [HideInInspector]
-    public GameObject autumnCabin;
-    [HideInInspector]
-    public GameObject completeCabin;
-
+    public GameObject summerCabin, autumnCabin, completeCabin;
     [HideInInspector]
     private int finishCurrentSceneCount;
-    public int wood = 0;
-    public int score = 0;
-    public int highScore = 0;
-    public string MainMenu;
-
+    [HideInInspector]
+    public int wood = 0, score = 0, highScore = 0;
+    [HideInInspector]
+    public string MainMenu, currentScene;
     [Header ("Total collectable wood:")]
     public int woodCount;
- 
+    [Header("Cabin to show:")]
+    public string cabinName;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        GetCurrentScene();
+        TutorialOverlayMessages();
+
         score = PlayerPrefs.GetInt("score", 0);
         wood = PlayerPrefs.GetInt("wood", 0);
         highScore = PlayerPrefs.GetInt("highScore", 0);
         Time.timeScale = 1f;
-        //GetCurrentScene();
 
         // Hide all cabins initially
         summerCabin = GameObject.Find("SummerCabin");
@@ -56,10 +55,37 @@ public class GameStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        // FOR TESTING //
+        if (Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            ShowCabin("Summer");
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad2))
         {
             ShowCabin("Autumn");
         }
+        if (Input.GetKeyDown(KeyCode.Keypad3))
+        {
+            ShowCabin("Complete");
+        }
+        /////////////////
+    }
+
+    public void TutorialOverlayMessages()
+    {
+        if (currentScene == "Tutorial")
+        {
+            FindObjectOfType<CanvasControl>().SetOverlayText("Find the tall trees and chop them down to gather wood for your cabin.", 7);
+        }
+    }
+
+    public void GetCurrentScene()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        currentScene = scene.name;
+        Debug.Log("Active Scene is '" + currentScene + "'.");
+
+        return;
     }
 
     // 
@@ -95,7 +121,7 @@ public class GameStatus : MonoBehaviour
             FindObjectOfType<CanvasControl>().SetOverlayText("Enter the Cabin.", 3);
             FindObjectOfType<CanvasControl>().HideScorePanel();    
             ResetWood();
-            ShowCabin("Summer");
+            ShowCabin(cabinName);
         }
     }
 
