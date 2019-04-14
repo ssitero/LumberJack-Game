@@ -27,7 +27,6 @@ public class GameStatus : MonoBehaviour
     void Start()
     {
         GetCurrentScene();
-        TutorialOverlayMessages();
 
         score = PlayerPrefs.GetInt("score", 0);
         wood = PlayerPrefs.GetInt("wood", 0);
@@ -71,21 +70,13 @@ public class GameStatus : MonoBehaviour
         /////////////////
     }
 
-    public void TutorialOverlayMessages()
-    {
-        if (currentScene == "Tutorial")
-        {
-            FindObjectOfType<CanvasControl>().SetOverlayText("Find the tall trees and chop them down to gather wood for your cabin.", 7);
-        }
-    }
-
     public void GetCurrentScene()
     {
         Scene scene = SceneManager.GetActiveScene();
         currentScene = scene.name;
         Debug.Log("Active Scene is '" + currentScene + "'.");
 
-        return;
+        //return currentScene;
     }
 
     // 
