@@ -12,10 +12,13 @@ public class CanvasControl : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject overMenu;
     public GameObject winMenu;
-    public static bool GameIsPaused = false;
     public GameObject overlay;
-    public Text overlayText;
+    public static bool GameIsPaused = false;
     float countDown = 3.0f;
+
+    [HideInInspector]
+    public Text overlayText;
+    
 
     void Start()
     {
@@ -176,6 +179,7 @@ public class CanvasControl : MonoBehaviour
             yield return null;
         }
         HideOverlay();
+        ShowScorePanel();
     }
 
     public void ShowOverlay()

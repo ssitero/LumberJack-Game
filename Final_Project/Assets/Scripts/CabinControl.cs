@@ -12,6 +12,8 @@ public class CabinControl : MonoBehaviour
         {
             Debug.Log("At the cabin!");
             FindObjectOfType<CanvasControl>().ShowLevelScreen();
+            FindObjectOfType<GameStatus>().ResetWood();
+            FindObjectOfType<CanvasControl>().HideScorePanel();
         }
     }
 }

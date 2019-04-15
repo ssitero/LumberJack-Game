@@ -14,6 +14,10 @@ TagManager:
   - Cabin
   - Stump
   - Log
+  - tutShirt1
+  - tutWood1
+  - tutShirt2
+  - tutWood2
   layers:
   - Default
   - TransparentFX
