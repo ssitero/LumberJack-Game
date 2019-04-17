@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6417,12 +6417,12 @@ PrefabInstance:
     - target: {fileID: 1560861038726892310, guid: 9df8f2787d903d14bb80ddb345557c00,
         type: 3}
       propertyPath: woodCount
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1560861038726892310, guid: 9df8f2787d903d14bb80ddb345557c00,
         type: 3}
       propertyPath: cabinName
-      value: Autumn
+      value: Complete
       objectReference: {fileID: 0}
     - target: {fileID: 1560861038726892309, guid: 9df8f2787d903d14bb80ddb345557c00,
         type: 3}
@@ -6960,17 +6960,6 @@ PrefabInstance:
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3727452031855514731, guid: 4f5626f7d13bac64c8b87d87c7396f08,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 51218ab4fae145347828ea48f87a029a,
-        type: 3}
-    - target: {fileID: 3727452031174152031, guid: 4f5626f7d13bac64c8b87d87c7396f08,
-        type: 3}
-      propertyPath: m_Text
-      value: Level 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3801684971046506054, guid: 4f5626f7d13bac64c8b87d87c7396f08,
         type: 3}
       propertyPath: m_text
@@ -6985,6 +6974,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727452031855514731, guid: 4f5626f7d13bac64c8b87d87c7396f08,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 51218ab4fae145347828ea48f87a029a,
+        type: 3}
+    - target: {fileID: 3727452031174152031, guid: 4f5626f7d13bac64c8b87d87c7396f08,
+        type: 3}
+      propertyPath: m_Text
+      value: Level 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5626f7d13bac64c8b87d87c7396f08, type: 3}
@@ -9896,29 +9896,29 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7920378648247037537, guid: d698b073080179a4aa314a5c5aa5db0c,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7920378648247037537, guid: d698b073080179a4aa314a5c5aa5db0c,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758721990185866555, guid: d698b073080179a4aa314a5c5aa5db0c,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758721990185866555, guid: d698b073080179a4aa314a5c5aa5db0c,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3778661691927541622, guid: d698b073080179a4aa314a5c5aa5db0c,
         type: 3}
       propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7920378648247037537, guid: d698b073080179a4aa314a5c5aa5db0c,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7920378648247037537, guid: d698b073080179a4aa314a5c5aa5db0c,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2758721990185866555, guid: d698b073080179a4aa314a5c5aa5db0c,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2758721990185866555, guid: d698b073080179a4aa314a5c5aa5db0c,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12514,13 +12514,13 @@ Transform:
   m_LocalPosition: {x: 57.754635, y: 1.7131271, z: 66.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2136246257}
   - {fileID: 1373566574}
-  - {fileID: 488722761}
-  - {fileID: 1612914986}
+  - {fileID: 2136246257}
   - {fileID: 172007126}
   - {fileID: 1986903456}
+  - {fileID: 488722761}
   - {fileID: 1925501482}
+  - {fileID: 1612914986}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

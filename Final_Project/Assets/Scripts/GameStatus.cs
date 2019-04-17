@@ -55,15 +55,15 @@ public class GameStatus : MonoBehaviour
     void Update()
     {
         // FOR TESTING //
-        if (Input.GetKeyDown(KeyCode.Keypad1))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             ShowCabin("Summer");
         }
-        if (Input.GetKeyDown(KeyCode.Keypad2))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             ShowCabin("Autumn");
         }
-        if (Input.GetKeyDown(KeyCode.Keypad3))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             ShowCabin("Complete");
         }
