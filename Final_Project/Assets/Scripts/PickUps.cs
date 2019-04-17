@@ -7,6 +7,7 @@ using System.Collections;
 
 public class PickUps : MonoBehaviour
 {
+
     [HideInInspector]
     private string currentScene;
 
@@ -28,8 +29,6 @@ public class PickUps : MonoBehaviour
         {
 
             Debug.Log("Collided with pickup!");
-            //gameStatus.GetComponent<GameStatus>().AddScore(1);
-            //gameStatus.AddScore(1);
 
             if (this.gameObject.tag == "Shirt")
             {
@@ -61,8 +60,28 @@ public class PickUps : MonoBehaviour
                 FindObjectOfType<GameStatus>().AddScore(1);
                 FindObjectOfType<AudioManager>().Play("Pickup");
                 FindObjectOfType<TutorialControl>().ShowShirt2();
+                //FindObjectOfType<TutorialControl>().ShowTree2();
+                FindObjectOfType<CanvasControl>().SetOverlayText("Collect the last flanel shirt.", 3);
+            }
+
+            if (this.gameObject.name == "tutWood2")
+            {
+                Debug.Log("Wood");
+                FindObjectOfType<GameStatus>().AddWood(1);
+                FindObjectOfType<AudioManager>().Play("WoodPickup");
+                //FindObjectOfType<TutorialControl>().ShowShirt1();
+                FindObjectOfType<CanvasControl>().SetOverlayText("Once all the wood has been collected enter your partially built cabin.", 5);
+
+            }
+
+            if (this.gameObject.name == "tutShirt2")
+            {
+                Debug.Log("Shirt");
+                FindObjectOfType<GameStatus>().AddScore(1);
+                FindObjectOfType<AudioManager>().Play("Pickup");
+                //FindObjectOfType<TutorialControl>().ShowShirt2();
                 FindObjectOfType<TutorialControl>().ShowTree2();
-                FindObjectOfType<CanvasControl>().SetOverlayText("Collect the last flanel shirt and pieces of wood.", 5);
+                FindObjectOfType<CanvasControl>().SetOverlayText("Collect the last piece of wood.", 3);
             }
             this.gameObject.SetActive(false);
         }
