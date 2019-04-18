@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: b52f1099ba96c4c7687ca76cf1c37a56
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Axe_GEO
+    100002: center
+    100004: center_CTRL
+    100006: GOD_CTRL
+    100008: Hat_Geo
+    100010: head
+    100012: head_aim
+    100014: head_CTRL
+    100016: L_ankle
+    100018: L_arm_IK
+    100020: L_clav
+    100022: L_clav_CTRL
+    100024: L_elbow
+    100026: L_elbow_POLCTRL
+    100028: L_foot_ball
+    100030: L_foot_CTRL
+    100032: L_foot_INVIK
+    100034: L_hip
+    100036: L_knee
+    100038: L_knee_POLCTRL
+    100040: L_leg_IK
+    100042: L_shoulder
+    100044: L_shoulder_CTRL
+    100046: L_toe
+    100048: L_wrist
+    100050: L_wrist_CTRL
+    100052: //RootNode
+    100054: Lumberjack_GEO
+    100056: neck
+    100058: neck_CTRL
+    100060: R_ankle
+    100062: R_arm_IK
+    100064: R_clav
+    100066: R_clav_CTRL
+    100068: R_elbow
+    100070: R_elbow_POLCTRL
+    100072: R_foot_ball
+    100074: R_foot_CTRL
+    100076: R_foot_INVIK
+    100078: R_hip
+    100080: R_knee
+    100082: R_knee_POLCTRL
+    100084: R_leg_IK
+    100086: R_shoulder
+    100088: R_shoulder_CTRL
+    100090: R_toe
+    100092: R_wrist
+    100094: R_wrist_CTRL
+    100096: RIG_GROUP
+    100098: root
+    100100: root_CTRL
+    100102: spine1
+    100104: spine1_CTRL
+    100106: spine2
+    100108: spine2_CTRL
+    100110: spine3
+    100112: spine3_CTRL
+    400000: Axe_GEO
+    400002: center
+    400004: center_CTRL
+    400006: GOD_CTRL
+    400008: Hat_Geo
+    400010: head
+    400012: head_aim
+    400014: head_CTRL
+    400016: L_ankle
+    400018: L_arm_IK
+    400020: L_clav
+    400022: L_clav_CTRL
+    400024: L_elbow
+    400026: L_elbow_POLCTRL
+    400028: L_foot_ball
+    400030: L_foot_CTRL
+    400032: L_foot_INVIK
+    400034: L_hip
+    400036: L_knee
+    400038: L_knee_POLCTRL
+    400040: L_leg_IK
+    400042: L_shoulder
+    400044: L_shoulder_CTRL
+    400046: L_toe
+    400048: L_wrist
+    400050: L_wrist_CTRL
+    400052: //RootNode
+    400054: Lumberjack_GEO
+    400056: neck
+    400058: neck_CTRL
+    400060: R_ankle
+    400062: R_arm_IK
+    400064: R_clav
+    400066: R_clav_CTRL
+    400068: R_elbow
+    400070: R_elbow_POLCTRL
+    400072: R_foot_ball
+    400074: R_foot_CTRL
+    400076: R_foot_INVIK
+    400078: R_hip
+    400080: R_knee
+    400082: R_knee_POLCTRL
+    400084: R_leg_IK
+    400086: R_shoulder
+    400088: R_shoulder_CTRL
+    400090: R_toe
+    400092: R_wrist
+    400094: R_wrist_CTRL
+    400096: RIG_GROUP
+    400098: root
+    400100: root_CTRL
+    400102: spine1
+    400104: spine1_CTRL
+    400106: spine2
+    400108: spine2_CTRL
+    400110: spine3
+    400112: spine3_CTRL
+    2100000: lambert9
+    2100002: editedAxe1_phong1
+    2100004: editedAxe1_lambert2
+    2100006: lambert8
+    2100008: lambert10
+    2300000: Axe_GEO
+    2300002: Hat_Geo
+    3300000: Axe_GEO
+    3300002: Hat_Geo
+    4300000: Hat_Geo
+    4300002: Axe_GEO
+    4300004: Lumberjack_GEO
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Lumberjack_GEO
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

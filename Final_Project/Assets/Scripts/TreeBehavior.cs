@@ -36,7 +36,7 @@ public class TreeBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Axe"))
         {
             counter++;
             if (counter == 3)

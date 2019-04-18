@@ -18,6 +18,8 @@ TagManager:
   - tutWood1
   - tutShirt2
   - tutWood2
+  - Coin
+  - Axe
   layers:
   - Default
   - TransparentFX
