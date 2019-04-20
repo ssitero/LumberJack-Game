@@ -5363,17 +5363,17 @@ PrefabInstance:
     - target: {fileID: 2095655116885068294, guid: 3545c42b15016d544a0a9b4760559e5c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.7
+      value: -6.58
       objectReference: {fileID: 0}
     - target: {fileID: 2095655116885068294, guid: 3545c42b15016d544a0a9b4760559e5c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.24
+      value: -20.86
       objectReference: {fileID: 0}
     - target: {fileID: 2095655116885068294, guid: 3545c42b15016d544a0a9b4760559e5c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.5
+      value: -5.65
       objectReference: {fileID: 0}
     - target: {fileID: 2095655116885068294, guid: 3545c42b15016d544a0a9b4760559e5c,
         type: 3}
@@ -9710,7 +9710,7 @@ PrefabInstance:
     - target: {fileID: 2095655116885068294, guid: 3545c42b15016d544a0a9b4760559e5c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.1
+      value: 3.22
       objectReference: {fileID: 0}
     - target: {fileID: 2095655116885068294, guid: 3545c42b15016d544a0a9b4760559e5c,
         type: 3}
@@ -9720,7 +9720,7 @@ PrefabInstance:
     - target: {fileID: 2095655116885068294, guid: 3545c42b15016d544a0a9b4760559e5c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.2
+      value: -18.25
       objectReference: {fileID: 0}
     - target: {fileID: 2095655116885068294, guid: 3545c42b15016d544a0a9b4760559e5c,
         type: 3}
@@ -10844,7 +10844,7 @@ MonoBehaviour:
   - {fileID: 894113582}
   - {fileID: 1937108738}
   - {fileID: 280758058}
-  speed: 6
+  speed: 7
   agroRadius: 15
   attakDistance: 3
   attackCoolDown: 3
