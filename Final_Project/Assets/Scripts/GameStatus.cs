@@ -26,7 +26,7 @@ public class GameStatus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetCurrentScene();
+        SetCurrentScene();
 
         score = PlayerPrefs.GetInt("score", 0);
         wood = PlayerPrefs.GetInt("wood", 0);
@@ -45,7 +45,7 @@ public class GameStatus : MonoBehaviour
         {
             autumnCabin.SetActive(false);
         }
-        if (autumnCabin != null)
+        if (completeCabin != null)
         {
             completeCabin.SetActive(false);
         }
@@ -54,7 +54,7 @@ public class GameStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // FOR TESTING //
+        // Cabin CHEATS //
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             ShowCabin("Summer");
@@ -70,13 +70,17 @@ public class GameStatus : MonoBehaviour
         /////////////////
     }
 
-    public void GetCurrentScene()
+    public void SetCurrentScene()
     {
         Scene scene = SceneManager.GetActiveScene();
         currentScene = scene.name;
         Debug.Log("Active Scene is '" + currentScene + "'.");
-
-        //return currentScene;
+    }
+   
+    // Returns the current scene name
+    public string GetCurrentScene()
+    {
+        return currentScene;
     }
 
     // 

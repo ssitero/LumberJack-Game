@@ -42,11 +42,13 @@ public class AudioManager : MonoBehaviour
         {
             Play("AmbientForest");
             Stop("Folk");
+            Cursor.visible = false;
         }
         else
         {
             Play("Folk");
             Stop("AmbientForest");
+            Cursor.visible = true;
         }
     }
 
