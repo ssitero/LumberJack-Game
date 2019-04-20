@@ -20,6 +20,7 @@ TagManager:
   - tutWood2
   - Coin
   - Axe
+  - Snowman
   layers:
   - Default
   - TransparentFX
@@ -41,7 +42,7 @@ TagManager:
   - Wood
   - Cabin
   - Stump
-  - 
+  - Snowman
   - 
   - 
   - 

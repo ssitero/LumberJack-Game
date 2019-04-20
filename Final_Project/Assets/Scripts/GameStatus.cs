@@ -26,6 +26,7 @@ public class GameStatus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         GetCurrentScene();
 
         score = PlayerPrefs.GetInt("score", 0);
@@ -45,7 +46,7 @@ public class GameStatus : MonoBehaviour
         {
             autumnCabin.SetActive(false);
         }
-        if (autumnCabin != null)
+        if (completeCabin != null)
         {
             completeCabin.SetActive(false);
         }
