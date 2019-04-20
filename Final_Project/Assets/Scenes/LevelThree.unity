@@ -4885,7 +4885,7 @@ PrefabInstance:
     - target: {fileID: 1432107674, guid: 599ea3f120b294f9ba7035e3f7ed3388, type: 3}
       propertyPath: wood
       value: 
-      objectReference: {fileID: 2100000, guid: 311a81bb78e7c4b60bf85547f8b1892d, type: 2}
+      objectReference: {fileID: 2100000, guid: 62246eb8e41104f17a2611b3615e02d6, type: 2}
     - target: {fileID: 1718852437, guid: 599ea3f120b294f9ba7035e3f7ed3388, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6146,7 +6146,7 @@ PrefabInstance:
     - target: {fileID: 1432107674, guid: 599ea3f120b294f9ba7035e3f7ed3388, type: 3}
       propertyPath: wood
       value: 
-      objectReference: {fileID: 2100000, guid: 311a81bb78e7c4b60bf85547f8b1892d, type: 2}
+      objectReference: {fileID: 2100000, guid: 62246eb8e41104f17a2611b3615e02d6, type: 2}
     - target: {fileID: 1718852437, guid: 599ea3f120b294f9ba7035e3f7ed3388, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -8321,7 +8321,7 @@ PrefabInstance:
     - target: {fileID: 1432107674, guid: 599ea3f120b294f9ba7035e3f7ed3388, type: 3}
       propertyPath: wood
       value: 
-      objectReference: {fileID: 2100000, guid: 311a81bb78e7c4b60bf85547f8b1892d, type: 2}
+      objectReference: {fileID: 2100000, guid: 62246eb8e41104f17a2611b3615e02d6, type: 2}
     - target: {fileID: 1718852437, guid: 599ea3f120b294f9ba7035e3f7ed3388, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -11922,7 +11922,7 @@ PrefabInstance:
     - target: {fileID: 1432107674, guid: 599ea3f120b294f9ba7035e3f7ed3388, type: 3}
       propertyPath: wood
       value: 
-      objectReference: {fileID: 2100000, guid: 311a81bb78e7c4b60bf85547f8b1892d, type: 2}
+      objectReference: {fileID: 2100000, guid: 62246eb8e41104f17a2611b3615e02d6, type: 2}
     - target: {fileID: 1718852437, guid: 599ea3f120b294f9ba7035e3f7ed3388, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12103,7 +12103,7 @@ PrefabInstance:
     - target: {fileID: 1432107674, guid: 599ea3f120b294f9ba7035e3f7ed3388, type: 3}
       propertyPath: wood
       value: 
-      objectReference: {fileID: 2100000, guid: 311a81bb78e7c4b60bf85547f8b1892d, type: 2}
+      objectReference: {fileID: 2100000, guid: 62246eb8e41104f17a2611b3615e02d6, type: 2}
     - target: {fileID: 1718852437, guid: 599ea3f120b294f9ba7035e3f7ed3388, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
