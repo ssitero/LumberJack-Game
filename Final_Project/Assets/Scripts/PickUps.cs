@@ -7,7 +7,7 @@ using System.Collections;
 
 public class PickUps : MonoBehaviour
 {
-
+   // public GameObject blue;
     [HideInInspector]
     private string currentScene;
 
@@ -27,7 +27,8 @@ public class PickUps : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-
+            //other.gameObject.SetActive(false);
+           // blue.SetActive(true);
             Debug.Log("Collided with pickup!");
 
             if (this.gameObject.tag == "Shirt")

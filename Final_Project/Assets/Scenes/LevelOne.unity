@@ -1475,7 +1475,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e460527137e49de9ddbf5806f480af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blue: {fileID: 0}
 --- !u!54 &482048738
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2159,7 +2158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e460527137e49de9ddbf5806f480af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blue: {fileID: 710214847}
 --- !u!114 &710214851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2880,6 +2878,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5637583c6cbe948ffb801eac7ffb5e7d, type: 3}
+    - target: {fileID: 412908183, guid: 6c7a673b5163b4e6690034fac4ffc682, type: 3}
+      propertyPath: blue
+      value: 
+      objectReference: {fileID: 710214847}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c7a673b5163b4e6690034fac4ffc682, type: 3}
 --- !u!1 &844549636 stripped
@@ -10350,7 +10352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 97833ae8084f84c69ba016d36d0dbcc0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100050, guid: 97833ae8084f84c69ba016d36d0dbcc0, type: 3}
       propertyPath: m_IsActive
