@@ -8,7 +8,7 @@ public class ShirtSwap : MonoBehaviour
     //public Material Blue;
     //  public Material[] material;
     //  Renderer rend;
-  public GameObject blue;
+//  public GameObject blue;
    
     void Start()
     {
@@ -18,18 +18,18 @@ public class ShirtSwap : MonoBehaviour
     }
 
    
-     void OnCollisionEnter(Collision col){
+    // void OnCollisionEnter(Collision col){
 
         //if (col.gameObject.CompareTag("Shirt")){
            
           //  this.gameObject.GetComponent<Renderer>().material = Blue;
             
-        if(col.gameObject.name == "Blue"){
-            this.gameObject.SetActive(false);
-            blue.SetActive(true);
-        }
+     //   if(col.gameObject.name == "Blue"){
+       //     this.gameObject.SetActive(false);
+       //     blue.SetActive(true);
+        //}
 
-        }
+      //  }
 
     }
 
