@@ -18,7 +18,22 @@ ModelImporter:
     3300002: pasted__polySurface4
     4300000: headHat:Hat:Hat
     4300002: pasted__polySurface4
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: faceUV
+    second: {fileID: 2800000, guid: cb2a118d2d0c948dc90a7c80f64c1e59, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hatUV
+    second: {fileID: 2800000, guid: 633b288aa45e143a089e2c81093ec9f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pink_uv
+    second: {fileID: 2800000, guid: a6799aa61c11d4b12ace6fb5f5425817, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

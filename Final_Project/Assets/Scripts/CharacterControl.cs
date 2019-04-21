@@ -7,9 +7,9 @@ public class CharacterControl : MonoBehaviour
 
 {
 
-    float speed = 5;
-    float rotSpeed = 100;
-    float gravity = 8;
+    readonly float speed = 5;
+    readonly float rotSpeed = 100;
+    readonly float gravity = 100;
     float rot = 0f;
 
     Vector3 moveDir = Vector3.zero;
@@ -68,7 +68,7 @@ public class CharacterControl : MonoBehaviour
 
             }
         }
-        rot += Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
+        rot += Input.GetAxisRaw("Horizontal") * rotSpeed * Time.deltaTime;
         transform.eulerAngles = new Vector3(0, rot, 0);
 
         moveDir.y -= gravity * Time.deltaTime;
