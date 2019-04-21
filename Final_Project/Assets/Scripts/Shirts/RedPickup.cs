@@ -5,15 +5,17 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class WoodPickup : MonoBehaviour
+public class RedPickup : MonoBehaviour
 {
-   // public GameObject blue;
+    public GameObject red;
+
     [HideInInspector]
     private string currentScene;
 
     private void Start()
     {
         //GetCurrentScene();
+        //  blue = GameObject.transform.Find("Player").transform;
     }
 
     public void GetCurrentScene()
@@ -27,9 +29,11 @@ public class WoodPickup : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-         //   other.gameObject.SetActive(false);
-         //   blue.SetActive(true);
-          //  blue.transform.position = other.gameObject.transform.position;
+
+            other.gameObject.SetActive(false);
+            red.SetActive(true);
+            red.transform.position = other.gameObject.transform.position;
+            red.transform.rotation = other.gameObject.transform.rotation;
             Debug.Log("Collided with pickup!");
 
             if (this.gameObject.tag == "Shirt")
@@ -89,3 +93,4 @@ public class WoodPickup : MonoBehaviour
         }
     }
 }
+

@@ -8,12 +8,14 @@ using System.Collections;
 public class PickUps : MonoBehaviour
 {
     public GameObject blue;
+    
     [HideInInspector]
     private string currentScene;
 
     private void Start()
     {
         //GetCurrentScene();
+      //  blue = GameObject.transform.Find("Player").transform;
     }
 
     public void GetCurrentScene()
@@ -27,9 +29,11 @@ public class PickUps : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
+            
             other.gameObject.SetActive(false);
             blue.SetActive(true);
             blue.transform.position = other.gameObject.transform.position;
+            blue.transform.rotation = other.gameObject.transform.rotation;
             Debug.Log("Collided with pickup!");
 
             if (this.gameObject.tag == "Shirt")
