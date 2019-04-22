@@ -20,25 +20,7 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // For TESTING /////////
-        /*if (Input.GetKeyUp(KeyCode.H))
-        {
-            hitPoints--;
-            if (hitPoints == 2)
-            {
-                heart3.SetActive(false);
-            }
-            if (hitPoints == 1)
-            {
-                heart2.SetActive(false);
-            }
-            if (hitPoints == 0)
-            {
-                heart1.SetActive(false);
-                FindObjectOfType<CanvasControl>().ShowOverMenu();
-            }
-        }*/
-        ////////////////////////
+
     }
 
     private void OnCollisionEnter(Collision col)
@@ -60,6 +42,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 heart1.SetActive(false);
                 FindObjectOfType<CanvasControl>().ShowOverMenu();
+                FindObjectOfType<CanvasControl>().HideScorePanel();
             }
         }
     }
