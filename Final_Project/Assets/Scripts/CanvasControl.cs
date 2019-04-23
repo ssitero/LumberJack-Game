@@ -32,10 +32,12 @@ public class CanvasControl : MonoBehaviour
             if (GameIsPaused)
             {
                 Resume();
+                
             }
             else
             {
                 Pause();
+                
             }
         }
     }
@@ -122,11 +124,13 @@ public class CanvasControl : MonoBehaviour
     // Pause Menu Panel
     public void Pause()
     {
+        HideScorePanel();
         pauseMenu.SetActive(true);
         LockScreen();
     }
     public void Resume()
     {
+        ShowScorePanel();
         pauseMenu.SetActive(false);
         UnlockScreen();
     }

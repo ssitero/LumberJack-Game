@@ -15,7 +15,7 @@ public class CharacterControl : MonoBehaviour
 
     CharacterController controller;
     Animator anim;
-
+   
     void Start()
     {
 
@@ -26,10 +26,8 @@ public class CharacterControl : MonoBehaviour
 
     void Update()
     {
-
         Movement();
         GetInput();
-
     }
 
     void Movement()
@@ -38,8 +36,8 @@ public class CharacterControl : MonoBehaviour
 
         if (controller.isGrounded)
         {
-
             if (Input.GetKey(KeyCode.W))
+            //if (Input.GetKey(KeyCode.W) || Input.GetAxis("Vertical") != 0)
             {
 
                 if (anim.GetBool("attacking") == true)
@@ -58,13 +56,15 @@ public class CharacterControl : MonoBehaviour
 
             }
             if (Input.GetKeyUp(KeyCode.W))
+            //if (Input.GetKeyUp(KeyCode.W) || Input.GetAxis("Vertical") == 0) // For some reason this breaks the chop
             {
-
+           
                 anim.SetBool("running", false);
                 anim.SetInteger("condition", 0);
                 moveDir = new Vector3(0, 0, 0);
 
             }
+ 
         }
         rot += Input.GetAxisRaw("Horizontal") * rotSpeed * Time.deltaTime;
         transform.eulerAngles = new Vector3(0, rot, 0);
@@ -81,6 +81,7 @@ public class CharacterControl : MonoBehaviour
         if (controller.isGrounded)
         {
             if (Input.GetMouseButtonDown(0))
+            //if (Input.GetMouseButtonDown(0) || Input.GetKeyDown("joystick button 0"))
             {
 
                 if (anim.GetBool("running") == true)
@@ -95,17 +96,12 @@ public class CharacterControl : MonoBehaviour
                 }
 
             }
-
         }
-
     }
 
     void Attacking()
     {
-
-
         StartCoroutine(AttackRoutine());
-
     }
 
     IEnumerator AttackRoutine()
@@ -116,6 +112,4 @@ public class CharacterControl : MonoBehaviour
         anim.SetInteger("condition", 0);
         anim.SetBool("attacking", false);
     }
-
-
 }
