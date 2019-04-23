@@ -6,7 +6,6 @@ public class CharacterControl : MonoBehaviour
 
 
 {
-    private Vector3 movementVector;
     readonly float speed = 5;
     readonly float rotSpeed = 100;
     readonly float gravity = 100;
@@ -30,8 +29,6 @@ public class CharacterControl : MonoBehaviour
 
         Movement();
         GetInput();
-        movementVector.x = Input.GetAxis("LeftJoystickX") * speed;
-        movementVector.z = Input.GetAxis("LeftJoystickY") * speed;
 
     }
 
