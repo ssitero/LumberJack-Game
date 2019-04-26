@@ -18,10 +18,8 @@ public class CharacterControl : MonoBehaviour
    
     void Start()
     {
-
         controller = GetComponent < CharacterController > ();
         anim = GetComponent<Animator>();
-
     }
 
     void Update()
@@ -32,69 +30,70 @@ public class CharacterControl : MonoBehaviour
 
     void Movement()
     {
-
-
         if (controller.isGrounded)
         {
-            if (Input.GetKey(KeyCode.W))
-            //if (Input.GetKey(KeyCode.W) || Input.GetAxis("Vertical") != 0)
+            if (Input.GetAxisRaw("Vertical") > 0)
             {
-
                 if (anim.GetBool("attacking") == true)
                 {
                     return;
                 }
-                else if (anim.GetBool("attacking") == false)
+                else
                 {
-
                     anim.SetBool("running", true);
                     anim.SetInteger("condition", 1);
                     moveDir = new Vector3(0, 0, 1);
                     moveDir *= speed;
                     moveDir = transform.TransformDirection(moveDir);
                 }
-
             }
-            if (Input.GetKeyUp(KeyCode.W))
-            //if (Input.GetKeyUp(KeyCode.W) || Input.GetAxis("Vertical") == 0) // For some reason this breaks the chop
+
+            if (Input.GetAxisRaw("Vertical") == 0)
             {
-           
                 anim.SetBool("running", false);
                 anim.SetInteger("condition", 0);
                 moveDir = new Vector3(0, 0, 0);
-
             }
- 
+
+            if (Input.GetAxisRaw("Vertical") < 0)
+            {
+                if (anim.GetBool("attacking") == true)
+                {
+                    return;
+                }
+                else
+                {
+                    anim.SetBool("running", true);
+                    anim.SetInteger("condition", 1);
+                    moveDir = new Vector3(0, 0, -1);
+                    moveDir *= speed;
+                    moveDir = transform.TransformDirection(moveDir);
+                }
+            }
         }
+
         rot += Input.GetAxisRaw("Horizontal") * rotSpeed * Time.deltaTime;
         transform.eulerAngles = new Vector3(0, rot, 0);
 
         moveDir.y -= gravity * Time.deltaTime;
         controller.Move(moveDir * Time.deltaTime);
-
-
     }
 
     void GetInput()
     {
-
         if (controller.isGrounded)
         {
-            if (Input.GetMouseButtonDown(0))
-            //if (Input.GetMouseButtonDown(0) || Input.GetKeyDown("joystick button 0"))
+            if (Input.GetButton("Fire1"))
             {
-
-                if (anim.GetBool("running") == true)
-                {
-                    anim.SetBool("running", false);
-                    anim.SetInteger("condition", 0);
-
-                }
-                if (anim.GetBool("running") == false)
+                if (anim.GetBool("running") != true)
                 {
                     Attacking();
                 }
-
+                else
+                {
+                    anim.SetBool("running", false);
+                    anim.SetInteger("condition", 0);
+                }
             }
         }
     }
@@ -108,7 +107,7 @@ public class CharacterControl : MonoBehaviour
     {
         anim.SetBool("attacking", true);
         anim.SetInteger("condition", 2);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         anim.SetInteger("condition", 0);
         anim.SetBool("attacking", false);
     }
